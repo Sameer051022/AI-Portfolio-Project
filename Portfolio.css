@@ -1,0 +1,134 @@
+/*Navigation bar Section*/
+.navbar-brand{
+    margin-left: 20px;
+}
+
+.navbar-collapse{
+  margin-left: 20px;
+}
+
+/*Home section*/
+.center-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.heading-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid black;
+}
+
+/*Portfolio Section*/
+.project-image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);  // Slightly darker for better readability
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .overlay {
+        padding: 0.5px;  // Reduce padding
+    }
+    .card-title, .text {
+        font-size: 8px;  // Reduce font size if necessary
+    }
+    .view-project-btn {
+        padding: 0.2px 0.2px;  // Slightly smaller button
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .overlay {
+        padding: 0.5px;
+    }
+    .card-title, .text {
+        font-size: 12px;
+    }
+    .view-project-btn {
+        padding: 0.2px 0.2px;
+    }
+}
+
+.project-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.project-image-wrapper:hover .project-image {
+    filter: blur(3px);
+}
+
+.project-image-wrapper:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-title {
+    color: #faf5c5;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.view-project-btn {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.view-project-btn:hover {
+    background-color: #ddd;
+}
+
+/*Social links Section*/
+.mail{
+    font-size: 0.8rem;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.ps{
+  width: 30px;
+  height: 30px;
+}
+
+/*html*/
+body{
+    background-color: #faf5c5;
+}
