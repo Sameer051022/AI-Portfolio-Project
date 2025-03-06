@@ -22,9 +22,11 @@ This portfolio includes various projects demonstrating my skills in AI, machine 
 To clone and run this portfolio locally, follow the steps below:
 
 ``bash
-git clone https://github.com/yourusername/Sameer-AI-Portfolio.git
+git clone https://github.com/yourusername/AI-Portfolio-Project.git
 cd AI-Portfolio-Project
 # Open Portfolio.html in your web browser
 
 ## Contributions
 While this is a personal portfolio, feedback and suggestions are welcome! Feel free to fork this repo and submit a pull request or open an issue with your comments.
+
+
